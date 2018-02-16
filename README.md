@@ -87,5 +87,9 @@ To get started you need to know about three important routes or API endpoints.
 ## Requirements
 
 ### Visualization
+	- Players can see their hand at all times, and see the backs of the enemy cards
+	- Once an enemy card has been attacked its stats are revealed until that card is destroyed
 
 ### Functionality
+	- The player does not have to manually draw new cards, thier hand will always be full until their deck is empty
+	- The game is winnable/loseable and tieable
