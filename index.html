@@ -1,15 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Card Battle</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.0/css/mdb.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="Rpg-Awesome-master/css/rpg-awesome.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* * {
+      outline: 1px solid red;
+    } */
+  </style>
 </head>
+
 <body>
-  
+  <!-- canvas for animation(transparent) -->
+  <canvas id="canvas">
+  </canvas>
+  <div class="content-block gradient">
+    <div class="bgs" id="bg-keyframes"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <button id="stateButton" type="button" class="btn btn-outline-info">Start</button>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="blue-grey-grad pad">
+            <div class="card-header bg-info text-white margin">
+              <p>HighLand</p>
+              <p>Sword</p>
+            </div>
+            <div class="card-block rgba-green-light text-white">
+              <img style="width: 100%" src="sword.png" alt="">
+              <p class="">A very basic sword used for battle.</p>
+            </div>
+            <div class="card-footer rgba-grey-light text-white clearfix">
+              <i class="ra ra-sword pull-left"> 2</i>
+              <i class="ra ra-knight-helmet pull-right"> 1</i>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="purple-green-grad pad">
+            <div class="card-header bg-info text-white margin">
+              <p>Elegant Elvish</p>
+              <p>Sword</p>
+            </div>
+            <div class="card-block rgba-green-light text-white">
+              <img style="width: 100%" src="sword.png" alt="">
+              <p class="">An elegant Elven sword for battle.</p>
+            </div>
+            <div class="card-footer rgba-grey-light text-white">
+              Atk: 2 Def: 3
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="grad1 pad">
+            <div class="card-header bg-info text-white margin">
+              <p>Elegant Elvish</p>
+              <p>Sword</p>
+            </div>
+            <div class="card-block rgba-green-light text-white">
+              <img style="width: 100%" src="sword.png" alt="">
+              <p class="">An elegant Elven sword for battle.</p>
+            </div>
+            <div class="card-footer rgba-grey-light text-white">
+              Atk: 2 Def: 3
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <script src="card-service.js"></script>
   <script src="card-controller.js"></script>
   <script src="app.js"></script>
 </body>
+
 </html>
