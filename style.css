@@ -78,12 +78,17 @@ body {
   100% {left:0;}
 }
 
-.blue-grey-grad{
+.grad1{
 background: linear-gradient(to right, #007bff, rgba(255,0,0,0), #6c757d);
 }
 
-.purple-green-grad{
+.grad2{
 background: linear-gradient(to right, #8444a5, rgba(255,0,0,0), #1ec13c);
+}
+
+.grad3 {
+background: red; /* For browsers that do not support gradients */
+background: radial-gradient(rgb(100, 17, 209), rgba(255, 255, 0, 0), rgb(4, 235, 4)); /* Standard syntax (must be last) */
 }
 
 .margin{
@@ -92,11 +97,6 @@ margin: 5px
 
 .pad {
 padding: 5px
-}
-
-.grad1 {
-background: red; /* For browsers that do not support gradients */
-background: radial-gradient(rgb(100, 17, 209), rgba(255, 255, 0, 0), rgb(4, 235, 4)); /* Standard syntax (must be last) */
 }
 
 .gradient {
