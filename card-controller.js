@@ -1,8 +1,7 @@
 function CardController(){
   var cardService = new CardService()
 
-  function drawCards(){
-    var cardsElem = document.getElementById('cards')
+  function drawGame(){
     var cardTemplate = ''
     var cards = cardService.getCards()
 
